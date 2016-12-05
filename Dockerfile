@@ -28,7 +28,7 @@ RUN apt-get update
 
 ################## BEGIN INSTALLATION ######################
 
-RUN cd ~ &&sudo apt-get install -y iptables libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ libcap2-bin unzip zip curl git libssl-dev
+RUN cd ~ && apt-get install -y iptables libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ libcap2-bin unzip zip curl git libssl-dev
 
 
 
