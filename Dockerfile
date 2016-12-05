@@ -28,8 +28,19 @@ RUN apt-get update
 
 ################## BEGIN INSTALLATION ######################
 
+RUN apt-get install --fix-broken && apt-get autoremove && apt-get update && apt-get install samba
 
+RUN apt-get clean
 
+RUN cd /var/lib/apt
+
+RUN mv lists list.old
+
+RUN mkdir -p lists/partial
+
+RUN apt-get clean
+
+RUN apt-get update
 
 RUN cd ~ &&sudo apt-get install -y iptables libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ libcap2-bin unzip zip curl git libssl-dev
 
