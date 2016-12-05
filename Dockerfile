@@ -1,6 +1,3 @@
-﻿Def Docker
-
-
 ############################################################
 # Dockerfile to build container
 # Based on Ubuntu 16.04
