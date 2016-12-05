@@ -31,10 +31,10 @@ RUN apt-get update
 
 
 
-#RUN cd ~ && apt-get install iptables libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ libcap2-bin unzip zip curl git libssl-dev
+RUN cd ~ && apt-get install iptables libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ libcap2-bin unzip zip curl git libssl-dev
 
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 
 
 RUN apt-get install nodejs
@@ -42,7 +42,7 @@ RUN apt-get install nodejs
 
 
 
-RUN cd ~ && npm install blob request mysql compression letsencrypt letsencrypt-cli letsencrypt-express letsencrypt@2.x le-store-certbot@2.x le-challenge-fs@2.x le-acme-core@2.x le-sni-auto@2.x http2 cheerio html2jade winston express dateformat socket.io forever jade node-minify geoip-lite node-minify LinusU/node-canvas canvas base64-img twit promised-io web-push moment moment-timezone tz-lookup nodemailer xoauth2 browserify rtc-switchboard eth-lightwallet && cd ~/node_modules/geoip-lite && npm run-script updatedb
+#RUN cd ~ && npm install blob request mysql compression letsencrypt letsencrypt-cli letsencrypt-express letsencrypt@2.x le-store-certbot@2.x le-challenge-fs@2.x le-acme-core@2.x le-sni-auto@2.x http2 cheerio html2jade winston express dateformat socket.io forever jade node-minify geoip-lite node-minify LinusU/node-canvas canvas base64-img twit promised-io web-push moment moment-timezone tz-lookup nodemailer xoauth2 browserify rtc-switchboard eth-lightwallet && cd ~/node_modules/geoip-lite && npm run-script updatedb
 
 
 
