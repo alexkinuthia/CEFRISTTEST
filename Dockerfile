@@ -88,7 +88,6 @@ RUN setcap cap_net_bind_service=+ep `readlink -f \`which node\`` && setcap cap_n
 # Expose the default port
 EXPOSE 8083
 EXPOSE 8080
-EXPOSE 3000
 
 
 
