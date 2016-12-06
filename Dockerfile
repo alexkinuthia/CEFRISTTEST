@@ -19,7 +19,6 @@ MAINTAINER alex@codeengine.co.ke
 
 
 
-
 # Update the repository sources list
 RUN apt-get update
 
@@ -27,6 +26,10 @@ RUN apt-get update
 
 
 ################## BEGIN INSTALLATION ######################
+RUN add-apt-repository main
+RUN add-apt-repository universe
+RUN add-apt-repository restricted
+RUN add-apt-repository multiverse
 
 RUN cd ~ && apt-get install -y iptables libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ libcap2-bin unzip zip curl git libssl-dev
 
