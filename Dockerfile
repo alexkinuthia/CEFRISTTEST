@@ -20,9 +20,7 @@ MAINTAINER alex@codeengine.co.ke
 
 
 # Update the repository sources list
-RUN apt-get clean
-
-RUN apt-get update
+RUN apt-get -qq update
 
 
 
