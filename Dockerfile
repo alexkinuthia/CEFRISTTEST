@@ -1,13 +1,13 @@
 ############################################################
 # Dockerfile to build container
-# Based on Ubuntu 16.04.1
+# Based on Ubuntu 14.04.5
 ############################################################
 
 
 
 
 # Set the base image to Ubuntu
-FROM ubuntu:16.04.1
+FROM ubuntu:14.04.5
 
 
 
