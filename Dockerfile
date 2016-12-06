@@ -20,13 +20,13 @@ MAINTAINER alex@codeengine.co.ke
 
 
 # Update the repository sources list
-RUN apt-get update
+RUN apt-get -qq update
 
 
 
 
 ################## BEGIN INSTALLATION ######################
-RUN cd ~ && apt-get install -y iptables libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ libcap2-bin unzip zip curl git libssl-dev
+RUN cd ~ && apt-get install -qq -y iptables libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ libcap2-bin unzip zip curl git libssl-dev
 
 
 
@@ -35,8 +35,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 
 
 
-RUN apt-get install -y nodejs
-
+RUN apt-get install -qq -y nodejs
 
 
 
