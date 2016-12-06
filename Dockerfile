@@ -20,8 +20,6 @@ MAINTAINER alex@codeengine.co.ke
 
 
 # Update the repository sources list
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
-
 RUN apt-get clean
 
 RUN apt-get update
