@@ -20,7 +20,8 @@ MAINTAINER alex@codeengine.co.ke
 
 
 # Update the repository sources list
-RUN dpkg --add-architecture i386
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+
 RUN apt-get update
 
 
